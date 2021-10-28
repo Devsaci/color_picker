@@ -42,14 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
           Center(
         child: RaisedButton(
           color: currentColor,
-          child: Text("Select a color"),
+          child: const Text("Change My Color"),
           onPressed: () {
-            showDialog(context: context,
+            showDialog(
+                context: context,
                 builder: (BuildContext context) {
-              // ignore: prefer_const_constructors
-              return AlertDialog();
-                }
-            );
+                  // ignore: prefer_const_constructors
+                  return AlertDialog(
+                    title: Text("Select a color"),
+                  );
+                });
           },
         ),
       ),
