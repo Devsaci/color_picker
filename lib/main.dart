@@ -50,6 +50,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   // ignore: prefer_const_constructors
                   return AlertDialog(
                     title: Text("Select a color"),
+                    content: Column(
+                        // ignore: prefer_const_literals_to_create_immutables
+                        children: <Widget>[
+                          // ignore: prefer_const_constructors
+                          SingleChildScrollView(),
+                          RaisedButton(onPressed: () {})
+                        ]
+                    ),
                   );
                 });
           },
