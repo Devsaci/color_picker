@@ -27,6 +27,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  Color currentColor = const Color(0xff73299d);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +39,13 @@ class _MyHomePageState extends State<MyHomePage> {
       // ignore: prefer_const_constructors
       body:
           // ignore: prefer_const_constructors
-          Center(),
+          Center(
+        child: RaisedButton(
+          color: currentColor,
+          child: Text("Select a color"),
+          onPressed: () {},
+        ),
+      ),
     );
   }
 }
